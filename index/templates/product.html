@@ -21,18 +21,6 @@
     <img src="{{ product.product_photo.url }}" width="350" height="350" alt="{{ product.product_name }}">
     <br>
     <p class="text-white">Описание: {{ product.product_description }}</p>
-    <br>
-    <p class="text-white">Количество на складе: {{product.product_count}}</p>
-    <br>
-    <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/category/{{ product.product_category.id }}"
-                                class="nav-link active" aria-current="page">{{product.product_category}}
-        </a>
-        </li>
-    </ul>
-    <br>
-    <button class="btn btn-warning text-white">В корзину</button>
-    <button class="btn btn-secondary text-white">${{product.product_price}}</button>
 </div>
 </body>
 </html>

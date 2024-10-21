@@ -24,7 +24,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4 text-white">Чпок-пупок | Магазин девайсов</span>
+        <span class="fs-4 text-white">Breaking News | Срочные новости</span>
       </a>
 
       <ul class="nav nav-pills">
@@ -33,12 +33,11 @@
     </header>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         {% for p in products %}
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-            <img src="{{ p.product_photo.url }}" width="200" height="200" alt="{{ p }}">
+      <div class="pan">
+        <div class="fs-2 mb-2">
+            <img src="{{ p.product_photo.url }}" width="400" height="300" alt="{{ p }}">
         </div>
-        <h3 class="fs-2 text-white">{{ p.product_name }}</h3>
-        <p class="text-white">{{ p.product_description }}</p>
+        <h3 class="fs-5 text-white">{{ p.product_name }}</h3>
         <a href="/product/{{ p.id }}" class="icon-link">
           Подробнее
         </a>
